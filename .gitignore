@@ -26,3 +26,16 @@ Thumbs.db
 
 # Logs
 *.log
+
+
+
+node_modules/
+dist/
+target/
+.idea/
+.vscode/
+.settings/
+.classpath
+.project
+*.log
+.env

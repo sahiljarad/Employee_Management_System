@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	min-width: 320px;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+body {
+	min-width: 320px;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+img,
+svg,
+canvas {
+	max-width: 100%;
+}
+
+#root {
+	min-height: 100vh;
+	min-height: 100dvh;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.MuiTableContainer-root {
+	max-width: 100%;
+	overflow-x: auto;
+}
+
+.MuiTablePagination-toolbar {
+	min-height: 52px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+@media (max-width: 600px) {
+	.MuiTablePagination-toolbar {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 4px;
+		padding: 8px 0;
+	}
+
+	.MuiTablePagination-spacer {
+		display: none;
+	}
+}
+
+/* Tablet: keep tables/cards from squeezing */
+@media (min-width: 601px) and (max-width: 991px) {
+	.MuiTableCell-root {
+		padding: 10px 12px;
+	}
+}
+
+/* Prevent iOS zoom on input focus (phones) */
+@media (max-width: 600px) {
+	input,
+	select,
+	textarea {
+		font-size: 16px;
+	}
+}
+
+/* Large desktop: keep content readable */
+@media (min-width: 1600px) {
+	.MuiContainer-maxWidthXl {
+		max-width: 1500px;
+	}
+}
