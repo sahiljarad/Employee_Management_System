@@ -1,41 +1,70 @@
-# Frontend
+# =================================
+# FRONTEND
+# =================================
 frontend/node_modules/
 frontend/dist/
 frontend/build/
+frontend/dist-ssr/
+
 frontend/.env
 frontend/.env.*
 !frontend/.env.example
 
-# Backend
+# =================================
+# BACKEND
+# =================================
 backend/target/
+
 backend/.env
 backend/.env.*
 !backend/.env.example
 
-# Java
-*.class
+# Spring Boot sensitive configuration
+backend/src/main/resources/application.properties
 
-# IDE
-.idea/
-*.iml/
-.vscode/
+# =================================
+# SECRETS AND ENVIRONMENT
+# =================================
+.env
+.env.*
+!.env.example
 
-# OS
-.DS_Store
-Thumbs.db
+*.pem
+*.key
+*.p12
+*.jks
 
-# Logs
-*.log
-
-
-
+# =================================
+# BUILD FILES
+# =================================
 node_modules/
 dist/
+build/
 target/
+
+# =================================
+# JAVA
+# =================================
+*.class
+
+# =================================
+# IDE
+# =================================
 .idea/
+*.iml
 .vscode/
 .settings/
 .classpath
 .project
+
+# =================================
+# LOGS
+# =================================
+logs/
 *.log
-.env
+
+# =================================
+# OS
+# =================================
+.DS_Store
+Thumbs.db
